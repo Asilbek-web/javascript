@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #4f4e4e;
+    color: #fff;
+}
+
+.container{
+    width: 1120px;
+    background-color: grey;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.header_nav{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
+
+.navigation_main{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.navigation{
+    width: 55%;
+    height: 300px;
+    background-color: blue;
+}
+.aside{
+    background-color: black;
+    width: 100%;
+    height: 140px;
+}
+.section{
+    background-color: rgb(77, 29, 29);
+    width: 100%;
+    height: 140px;
+}
+.section_main{
+    padding-left: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .navigation_main{
+        display: block;
+        width: 100%;
+    }
+    
+    .navigation{
+        display: block;
+        width: 100%;
+    }
+
+    .section_main{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+@media only screen and (max-width: 667px){
+    .navigation_main{
+        display: block;
+        width: 100%;
+    }
+    
+    .navigation{
+        display: block;
+        width: 100%;
+    }
+
+    .section_main{
+        display: block;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
